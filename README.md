@@ -31,7 +31,7 @@ cozy-house/
 
 ## 🚀 Getting Started
 
-To view the project locally:
+To view the project locally: https://albinademaj.github.io/CozyHouse/
 
 👩‍💻 Author
 Albina Demaj
