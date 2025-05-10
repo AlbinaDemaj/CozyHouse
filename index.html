@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cozy House</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+  <!-- Header -->
+  <header class="relative text-white py-72" style="background: url('img/pexels-alexandra-bilham-41703424-7329892.jpg') no-repeat center center; background-size: cover;">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-gradient-to-r from-white/80 to-gray-100/80 shadow-md z-50 backdrop-blur-sm">
+      <div class="container mx-auto flex justify-between items-center py-4 px-6">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="img/l1.png" alt="Cozy House Logo" class="h-12 w-12 mr-3">
+          <span class="text-2xl font-bold text-gray-800">Cozy House</span>
+        </div>
+
+    <!-- Hamburger Menu -->
+    <div class="relative md:hidden">
+      <!-- Checkbox -->
+      <input type="checkbox" id="menu-toggle" class="hidden peer" />
+      <!-- Hamburger Icon -->
+      <label for="menu-toggle" class="cursor-pointer block peer-checked:hidden">
+        <!-- Open Icon -->
+        <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg></label>
+        <label for="menu-toggle" class="hidden cursor-pointer peer-checked:block">
+        <!-- Close Icon -->
+        <img class="w-8 h-8 text-gray-700" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADJklEQVR4nO2dzW4TMRSFj5C6asWLEGAF9CnoZqws4D1Y0lXpjp9XIM9EUXbwBhAkIhERZORIkTWTTDP+ObbPJ82iG3t6v9zxxFZ0ACGEEEIIIYQogzMAHYAFgDsAvwBsG79WrhYLVxtboyRcAVgSFGBLfi1draLxAMA7gn90W9D1F8CNq11wJAMni7FSgnLlbO9P8hvAewDPAZyHnrBAzl0tPrja+J3yMtREZz1rxjcAs1ATVMhjAN971pQgC33X0xmSMU7K2qudreVkFt6g9jElxvHRq91nBOCrN+izEIM2wguvdraWk1l5g16EGLQRLrza2VpOxn+FE5nrJyHTkBAyJIQMCSFDQsiQEDIkhAwJIUNCyJAQMiSEjCKFPIo0LsM9FCfkGsAGwGvkwwD4A+C2dSHXe+NuMknZydjdx22rQmZeIbbu7znSMR+4h1mLQuDOmP2CbBJ1ihmY+1XgeYoSkkuKSSSjSCGppZiEMooVkkqKSSyjaCGxpeSQUbyQWFJyyahCSGgpOWVUIySUlNwyqhIyVQqDjOqEnCqFRUaVQu4rhUlGtULGSmGTUbWQY1IYZVQv5NAObe6d42aFDHUKW2c0JeSQFCYZTQkxB4TkPA5uUogZ8chikVK9kLkWdR4h5sCrbc7j4CY7xIz4nsEopUoh5h5f+tikVCfEnPANnElKVULMhO0QFinVCDEB9qYYpFQhxATcKMwtpXghJsKubU4pRQsxEbfQc0kpVohJcJ6RQ0qRQlIeLnWJpRQnJMdJX5dQSlFCch67domkFCNEP9gh7JA3GTrjWKe8RaMdsi8l97Fr56SEllGkEIt+Fk2+dVITRXZIzWwlhAsJIUNCyJAQMiSEDAkhQ0LIkBAyJIQMCaldyE9vQAW6jOehV7sfiBB5ZKPhxDguY0Qe+aFgNqdPjONTjFCwvtg8GwknDvM0VmzeULCkpAzzJGaw5FD06trl9NnnpBZ6/K/BpXtMrWNGr+5QODF4wonhIqhvejpFF/LEd++wraeAexz9IC5jPKaGOHNvDPaV+K4nDbTFawXgi3u17UIu4EIIIYQQQgiBiPwDBshI0rM5AtIAAAAASUVORK5CYII=" alt="close-window--v1">
+      </label>
+
+          <!-- Dropdown Menu -->
+          <div class="absolute top-14  transform -translate-x-1/2 w-140% max-w-md bg-orange-500 shadow-xl rounded-lg hidden peer-checked:flex flex-col items-center py-4 px-8 ">
+            <ul class="flex flex-col items-center space-y-6 w-full ">
+              <li class="w-full text-center">
+                <a href="#" class="block text-lg font-bold text-gray-800 hover:text-white transition">
+                  Home
+                </a>
+              </li>
+              <li class="w-full text-center">
+                <a href="#adoptpet" class="block text-lg font-bold text-gray-800 hover:text-orange-500 transition">
+                  Adopt Pet
+                </a>
+              </li>
+              <li class="w-full text-center">
+                <a href="#plans" class="block text-lg font-bold text-gray-800 hover:text-orange-500 transition">
+                  Plans
+                </a>
+              </li>
+              <li class="w-full text-center">
+                <a href="#about" class="block text-lg font-bold text-gray-800 hover:text-orange-500 transition">
+                  About
+                </a>
+              </li>
+              <li class="w-full text-center">
+                <a href="#contact" class="block text-lg font-bold text-gray-800 hover:text-orange-500 transition">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          
+         </div>
+          
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="#" class="text-lg text-gray-700 hover:text-orange-500 font-medium transition">Home</a></li>
+          <li><a href="#adoptpet" class="text-lg text-gray-700 hover:text-orange-500 font-medium transition">Adopt Pet</a></li>
+          <li><a href="#plans" class="text-lg text-gray-700 hover:text-orange-500 font-medium transition">Plans</a></li>
+          <li><a href="#about" class="text-lg text-gray-700 hover:text-orange-500 font-medium transition">About</a></li>
+          <li><a href="#contact" class="text-lg text-gray-700 hover:text-orange-500 font-medium transition">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header Content -->
+    <div class="container mx-auto text-center">
+      <h1 class="text-5xl font-bold">Cozy House</h1>
+      <p class="text-xl mt-4">Not only people need a house</p>
+      <button class="mt-6 px-8 py-3 bg-orange-500 text-white font-medium rounded-lg hover:bg-orange-600 transition duration-300">Make a Friend</button>
+    </div>
+  </header>
+
+
+ <!-- About -->
+ <section class="py-12 bg-gray-50">
+  <div class="container mx-auto flex flex-col lg:flex-row items-center lg:justify-between max-w-6xl">
+    <!-- Foto në anën e majtë -->
+    <div class="lg:w-1/2 relative mb-8 lg:mb-0">
+      <img src="img/bg3.jpg" alt="Dogs and cats" class="rounded-lg shadow-lg w-full">
+      <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-lg"></div>
+    </div>
+
+    <!-- Teksti në anën e djathtë -->
+    <div class="lg:w-1/2 flex flex-col justify-center lg:pl-12 text-center lg:text-left">
+      <h2 class="text-3xl font-extrabold text-gray-800 mb-6">
+        About the Shelter <span class="text-orange-500">"Cozy House"</span>
+      </h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-6">
+        At "Cozy House," we believe every animal deserves a loving home. Our shelter provides care and support for pets in need, ensuring they find their forever family. Join us in making a difference and giving these wonderful companions a second chance at life.
+      </p>
+      <a href="#" class="inline-block bg-orange-500 text-white px-6 py-3 rounded-lg shadow-lg font-medium hover:bg-orange-600 transition duration-300">
+        Learn More
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-gray-100 py-12">
+<div class="container mx-auto text-center">
+  <h2 class="text-2xl font-bold mb-8">Our Friends Who Are Looking for a House</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Friend 1 -->
+    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden group transform transition-transform duration-300 hover:scale-105">
+      <div class="relative w-full h-64">
+        <img src="img/1.jpg" alt="Karime" class="w-full h-full object-cover rounded-t-lg transition-opacity duration-300 group-hover:opacity-0">
+        <img src="img/1.2.jpeg" alt="Karime Hover" class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+      </div>
+      <div class="p-4">
+        <h3 class="text-lg font-bold">Karime</h3>
+        <p class="text-sm text-gray-600 mt-2 group-hover:text-orange-500 transition-colors duration-300">Age: 2 years</p>
+        <p class="text-sm text-gray-600 mt-2 group-hover:text-orange-500 transition-colors duration-300">Friendly and playful!</p>
+        <p class="text-sm text-gray-600 mt-2 group-hover:text-orange-500 transition-colors duration-300">Price: $50</p>
+        <button class="mt-4 px-4 py-2 bg-orange-500 text-white font-medium rounded hover:bg-orange-600">
+          Buy Now
+        </button>
+      </div>
+    </div>
+
+    <!-- Friend 2 -->
+    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden group transform transition-transform duration-300 hover:scale-105">
+      <div class="relative w-full h-64">
+        <img src="img/2.1.jpg" alt="Jennifer" class="w-full h-full object-cover rounded-t-lg transition-opacity duration-300 group-hover:opacity-0">
+        <img src="img/2.jpg" alt="Jennifer Hover" class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+      </div>
+      <div class="p-4">
+        <h3 class="text-lg font-bold">Jennifer</h3>
+        <p class="text-sm text-gray-600 mt-2 group-hover:text-orange-500 transition-colors duration-300">Age: 3 years</p>
+        <p class="text-sm text-gray-600 mt-2 group-hover:text-orange-500 transition-colors duration-300">Loves cuddles!</p>
+        <p class="text-sm text-gray-600 mt-2 group-hover:text-orange-500 transition-colors duration-300">Price: $40</p>
+        <button class="mt-4 px-4 py-2 bg-orange-500 text-white font-medium rounded hover:bg-orange-600">
+          Buy Now
+        </button>
+      </div>
+    </div>
+
+    <!-- Friend 3 -->
+    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden group transform transition-transform duration-300 hover:scale-105">
+      <div class="relative w-full h-64">
+        <img src="img/3.jpg" alt="Woody" class="w-full h-full object-cover rounded-t-lg transition-opacity duration-300 group-hover:opacity-0">
+        <img src="img/3.2.jpg" alt="Woody Hover" class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+      </div>
+      <div class="p-4">
+        <h3 class="text-lg font-bold">Woody</h3>
+        <p class="text-sm text-gray-600 mt-2 group-hover:text-orange-500 transition-colors duration-300">Age: 1 year</p>
+        <p class="text-sm text-gray-600 mt-2 group-hover:text-orange-500 transition-colors duration-300">Energetic and smart!</p>
+        <p class="text-sm text-gray-600 mt-2 group-hover:text-orange-500 transition-colors duration-300">Price: $30</p>
+        <button class="mt-4 px-4 py-2 bg-orange-500 text-white font-medium rounded hover:bg-orange-600">
+          Buy Now
+        </button>
+      </div>
+    </div>
+
+    <!-- Friend 4 -->
+    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden group transform transition-transform duration-300 hover:scale-105">
+      <div class="relative w-full h-64">
+        <img src="img/4.jpg" alt="Luna" class="w-full h-full object-cover rounded-t-lg transition-opacity duration-300 group-hover:opacity-0">
+        <img src="img/4.1.jpg" alt="Luna Hover" class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+      </div>
+      <div class="p-4">
+        <h3 class="text-lg font-bold">Luna</h3>
+        <p class="text-sm text-gray-600 mt-2 group-hover:text-orange-500 transition-colors duration-300">Age: 4 years</p>
+        <p class="text-sm text-gray-600 mt-2 group-hover:text-orange-500 transition-colors duration-300">Calm and affectionate.</p>
+        <p class="text-sm text-gray-600 mt-2 group-hover:text-orange-500 transition-colors duration-300">Price: $60</p>
+        <button class="mt-4 px-4 py-2 bg-orange-500 text-white font-medium rounded hover:bg-orange-600">
+          Buy Now
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+  <!-- Discount Promo Section -->
+  <section class="bg-orange-500 text-white py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4">Special Offer on Pet Food!</h2>
+      <p class="text-lg mb-6">Get 20% off on selected pet food items.</p>
+      
+      <!-- Product Offer -->
+      <div class="bg-white text-gray-900 rounded-lg shadow-lg max-w-xs mx-auto p-6">
+        <img src="img/download (1).jpeg" alt="Pet Food Promo" class="w-full h-48 object-cover rounded-md mb-4">
+        <h3 class="text-xl font-semibold">Healthy Dog Food</h3>
+        <p class="mt-2 text-sm text-gray-600">Special formula for your dog's health and happiness.</p>
+        <div class="flex items-center justify-between mt-4">
+          <p class="text-xl font-bold text-orange-500">$12.99</p>
+          <p class="text-sm line-through text-gray-500">$15.99</p>
+        </div>
+        <button class="mt-4 px-6 py-2 bg-orange-600 text-white font-medium rounded-md hover:bg-orange-700 transition">
+          Buy Now
+        </button>
+      </div>
+    </div>
+  </section>
+  
+   <!-- Section -->
+   <section class="max-w-7xl mx-auto p-6">
+    <!-- Header -->
+    <div class="text-center mb-8">
+      <!-- Main title -->
+      <h2 class="text-3xl font-semibold text-gray-800">With Care for You</h2>
+      
+      <!-- Navigation buttons -->
+      <div class="flex justify-center gap-4 mt-4">
+        <button class="px-4 py-2 text-orange-500 font-medium border border-orange-500 rounded-md hover:bg-orange-500 hover:text-white transition">Popular</button>
+        <button class="px-4 py-2 text-gray-500 font-medium border border-gray-300 rounded-md hover:bg-gray-300 hover:text-gray-800 transition">Collections</button>
+        <button class="px-4 py-2 text-gray-500 font-medium border border-gray-300 rounded-md hover:bg-gray-300 hover:text-gray-800 transition">Sets</button>
+      </div>
+    </div>
+
+
+    <!-- Content -->
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+      <!-- Left Section (Feature product) -->
+      <div class="lg:col-span-1">
+        <!-- Placeholder image for the main product -->
+        <img src="img/plan.jpg" alt="Pro Plan" class="rounded-md hover:scale-105 transition transform">
+        
+        <!-- Product information -->
+        <h3 class="mt-4 text-xl font-bold text-gray-800 hover:text-orange-500 transition">Pro Plan Dog Food</h3>
+        <p class="mt-2 text-gray-600">Purina Pro Plan ensures the proper nutrition of your pets throughout their lives.</p>
+        
+        <!-- Link to catalog -->
+        <a href="#" class="mt-4 inline-block text-orange-500 font-medium hover:underline">Browse Catalog</a>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Product Card -->
+        <div class="border rounded-lg p-4 bg-white hover:shadow-lg hover:border-orange-500 transition">
+          <!-- Product image -->
+          <img src="img/food.png" alt="Product" class="w-full rounded-md hover:scale-105 transition transform">
+          
+          <!-- Product title -->
+          <h4 class="mt-4 text-lg font-medium text-gray-800 hover:text-orange-500 transition">Pro Plan® Veterinary</h4>
+          
+          <!-- Product price -->
+          <p class="mt-2 text-gray-600">$7.50</p>
+
+          <!-- Quantity selector -->
+          <div class="mt-4 flex items-center gap-2">
+            <label for="quantity1" class="text-gray-600">Qty:</label>
+            <input type="number" id="quantity1" name="quantity1" min="1" max="10" value="1" class="w-16 px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 transition">
+          </div>
+
+          <!-- Add to cart button -->
+          <button class="mt-4 w-full py-2 bg-orange-500 text-white font-medium rounded-md hover:bg-orange-600 transition">Add to Cart</button>
+        </div>
+
+        <!-- Repeat for more products -->
+        <div class="border rounded-lg p-4 bg-white hover:shadow-lg hover:border-orange-500 transition">
+          <img src="img/food2.jpeg" alt="Product" class="w-full rounded-md hover:scale-105 transition transform">
+          <h4 class="mt-4 text-lg font-medium text-gray-800 hover:text-orange-500 transition">Royal Canin Renal</h4>
+          <p class="mt-2 text-gray-600">$11.20</p>
+          <div class="mt-4 flex items-center gap-2">
+            <label for="quantity2" class="text-gray-600">Qty:</label>
+            <input type="number" id="quantity2" name="quantity2" min="1" max="10" value="1" class="w-16 px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 transition">
+          </div>
+          <button class="mt-4 w-full py-2 bg-orange-500 text-white font-medium rounded-md hover:bg-orange-600 transition">Add to Cart</button>
+        </div>
+
+        <div class="border rounded-lg p-4 bg-white hover:shadow-lg hover:border-orange-500 transition">
+          <img src="img/images.jfif" alt="Product" class="w-full rounded-md hover:scale-105 transition transform">
+          <h4 class="mt-4 text-lg font-medium text-gray-800 hover:text-orange-500 transition">Banters Adult Food</h4>
+          <p class="mt-2 text-gray-600">$14.50</p>
+          <div class="mt-4 flex items-center gap-2">
+            <label for="quantity3" class="text-gray-600">Qty:</label>
+            <input type="number" id="quantity3" name="quantity3" min="1" max="10" value="1" class="w-16 px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 transition">
+          </div>
+          <button class="mt-4 w-full py-2 bg-orange-500 text-white font-medium rounded-md hover:bg-orange-600 transition">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<section class="bg-gray-100 py-16">
+  <div class="container mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-12">Than you can help our shelter</h2>
+    <!-- Grid with 2 rows and 4 icons per row -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 justify-items-center">
+      <!-- Pet food -->
+      <div class="flex flex-col items-center text-gray-600">
+        <img src="icon/icons8-pet-food-50.png" alt="Pet food" class="w-16 mb-4">
+        <p class="font-medium">Pet food</p>
+      </div>
+
+      <!-- Transportation -->
+      <div class="flex flex-col items-center text-gray-600">
+        <img src="icon/icons8-transportation-80.png" alt="Transportation" class="w-16 mb-4">
+        <p class="font-medium">Transportation</p>
+      </div>
+
+      <!-- Toys -->
+      <div class="flex flex-col items-center text-gray-600">
+        <img src="icon/icons8-toys-96.png" alt="Toys" class="w-16 mb-4">
+        <p class="font-medium">Toys</p>
+      </div>
+
+      <!-- Bowls and Cups -->
+      <div class="flex flex-col items-center text-gray-600">
+        <img src="icon/icons8-dog-bowl-80.png" alt="Bowls and Cups" class="w-16 mb-4">
+        <p class="font-medium">Bowls and cups</p>
+      </div>
+
+      <!-- Shampoos -->
+      <div class="flex flex-col items-center text-gray-600">
+        <img src="icon/icons8-shampoo-50.png" alt="Shampoos" class="w-16 mb-4">
+        <p class="font-medium">Shampoos</p>
+      </div>
+
+      <!-- Vitamins -->
+      <div class="flex flex-col items-center text-gray-600">
+        <img src="icon/icons8-vitamins-66.png" alt="Vitamins" class="w-16 mb-4">
+        <p class="font-medium">Vitamins</p>
+      </div>
+
+      <!-- Medicines -->
+      <div class="flex flex-col items-center text-gray-600">
+        <img src="icon/icons8-medicines-64.png" alt="Medicines" class="w-16 mb-4">
+        <p class="font-medium">Medicines</p>
+      </div>
+
+      <!-- Collars / Leashes -->
+      <div class="flex flex-col items-center text-gray-600">
+        <img src="icon/icons8-dog-collar-80.png" alt="Collars / Leashes" class="w-16 mb-4">
+        <p class="font-medium">Collars / Leashes</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Promo Section -->
+<section class="bg-orange-500 text-white relative overflow-hidden flex items-center justify-center h-64 w-full">
+<!-- Promo Content -->
+<div class="text-center z-10 px-4">
+  <!-- Main Text -->
+  <h2 class="text-3xl lg:text-4xl font-semibold">Special Offer! Discount on First Order</h2>
+  <p class="mt-2 text-4xl font-bold">-30%</p>
+  <p class="mt-2 text-sm lg:text-base">
+    Order via our mobile app using the promo code 
+    <span class="font-semibold">WELCOME</span>.
+  </p>
+  <p class="mt-1 text-xs lg:text-sm">*Valid for all orders over $20.</p>
+  
+  <!-- Button -->
+  <a href="#catalog" class="mt-4 inline-block px-6 py-2 bg-white text-orange-500 font-medium rounded-md hover:bg-gray-100 transition">
+    Browse Catalog
+  </a>
+</div>
+</section>
+
+
+<!-- Testimonials Section -->
+<section class="bg-gray-50 py-12">
+<div class="container mx-auto text-center">
+  <h2 class="text-3xl font-semibold mb-8">Our Happy Clients</h2>
+  <p class="text-lg mb-8 text-gray-600">Here's what our happy customers say about Cozy House and their shopping experience!</p>
+
+  <!-- Testimonial Cards -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Testimonial 1 -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+      <img src="img/t4.jpg" alt="Client 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+      <h3 class="text-xl font-semibold">John Doe</h3>
+      <p class="text-gray-600 mb-4">"I found the perfect pet food and accessories at Cozy House. Their products are top-notch, and the customer service is outstanding!"</p>
+      <p class="text-sm text-orange-500 font-semibold">Satisfied Customer</p>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+      <img src="img/t2.jpg" alt="Client 2" class="w-24 h-24 rounded-full mx-auto mb-4">
+      <h3 class="text-xl font-semibold">Alice Smith</h3>
+      <p class="text-gray-600 mb-4">"Cozy House made shopping for my pets a breeze! Fast delivery, great deals, and quality products that my pets love!"</p>
+      <p class="text-sm text-orange-500 font-semibold">Happy Shopper</p>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="bg-white shadow-lg rounded-lg p-6">
+      <img src="img/t1.jpg" alt="Client 3" class="w-24 h-24 rounded-full mx-auto mb-4">
+      <h3 class="text-xl font-semibold">Sarah Lee</h3>
+      <p class="text-gray-600 mb-4">"The pet toys and treats I bought from Cozy House are a hit with my dog! I'll definitely shop here again for all my pet needs."</p>
+      <p class="text-sm text-orange-500 font-semibold">Satisfied Pet Parent</p>
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+<footer class="bg-gray-800 text-gray-200 py-10">
+<div class="container mx-auto text-center">
+  <h3 class="text-2xl font-bold mb-8">Contact Us</h3>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Rreth nesh -->
+    <div class="flex flex-col items-center">
+      <h3 class="text-lg font-bold mb-4">About Us</h3>
+      <p class="text-sm leading-relaxed text-center">
+        We are dedicated to finding homes for our furry friends. Visit us to meet your new best friend and make a difference in their lives.
+      </p>
+    </div>
+
+    <!-- Navigimi -->
+    <div class="flex flex-col items-center">
+      <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-center">
+        <li>
+          <a href="#" class="hover:text-orange-400 transition-colors">Home</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-orange-400 transition-colors">Adopt a Pet</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-orange-400 transition-colors">About</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-orange-400 transition-colors">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Kontakti -->
+    <div class="flex flex-col items-center">
+      <h3 class="text-lg font-bold mb-4">Contact</h3>
+      <ul class="space-y-2 text-sm text-center">
+        <li class="flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26c.64.43 1.45.43 2.09 0L21 8m-9 8.72v5m-4-5v5m8-5v5M12 2v2m6.364 3.636l1.415-1.415m-16.97 0l1.415 1.415" />
+          </svg>
+          shelter@cozyhouse.com
+        </li>
+        <li class="flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11m8 4a8.001 8.001 0 00-14 0m-2 0h.01M3 21h18M3 3h18" />
+          </svg>
+          +383 49 123 456
+        </li>
+        <li class="flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M9 16h6m-6-8h6" />
+          </svg>
+          Prizren, Kosovo
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-gray-700 mt-8 pt-4 text-center">
+    <p class="text-sm">
+      © 2024 Cozy House. All rights reserved. | Built with ❤️ by Albina Demaj
+    </p>
+    <div class="flex justify-center space-x-4 mt-4">
+      <!-- Ikona e Instagramit -->
+      <a href="#" class="text-gray-400 hover:text-orange-400 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M7.75 2h8.5C19.9 2 22 4.1 22 7.75v8.5C22 19.9 19.9 22 16.25 22h-8.5C4.1 22 2 19.9 2 16.25v-8.5C2 4.1 4.1 2 7.75 2zm0 2C5.5 4 4 5.5 4 7.75v8.5C4 18.5 5.5 20 7.75 20h8.5C18.5 20 20 18.5 20 16.25v-8.5C20 5.5 18.5 4 16.25 4h-8.5zM12 7c1.93 0 3.5 1.57 3.5 3.5S13.93 14 12 14s-3.5-1.57-3.5-3.5S10.07 7 12 7zm6 0a1 1 0 100 2 1 1 0 000-2z" />
+        </svg>
+      </a>
+      <!-- Ikona e Facebook-ut -->
+      <a href="#" class="text-gray-400 hover:text-orange-400 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.408.593 24 1.325 24h11.491v-9.294H9.837v-3.622h2.979V8.413c0-2.942 1.798-4.556 4.422-4.556 1.255 0 2.332.093 2.644.135v3.067l-1.813.001c-1.421 0-1.696.676-1.696 1.67v2.188h3.392l-.442 3.622h-2.95V24h5.774C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.675 0z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+</footer>
+</body>
+
+</html>
+</body>
+</html>
